@@ -1,22 +1,23 @@
 'use client';
 
-import Navigation from '../(components)/Navigation';
+
 import Image from 'next/image';
 import { 
   FaEnvelope, 
   FaWhatsapp, 
   FaFacebookF, 
-  FaInstagram, 
   FaTelegramPlane,
   FaMapMarkerAlt,
-  FaPhone
+  FaPhone,
+  FaTiktok
 } from 'react-icons/fa';
+// Form state will be implemented in future updates
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState } from 'react';
 
 export default function Contact() {
   return (
     <div>
-      <Navigation />
       
       {/* Contact Hero Section */}
       <div className="relative h-[500px] overflow-hidden">
@@ -147,21 +148,15 @@ export default function Contact() {
           <h2 className="text-3xl font-bold text-[#1A2B4C] mb-12">Connect With Us</h2>
           <div className="flex justify-center space-x-8">
             <a 
-              href="#" 
+              href="https://www.facebook.com/profile.php?id=61575006255074" 
               className="bg-[#F2F2F2] w-16 h-16 rounded-lg flex items-center justify-center hover:bg-[#1A2B4C] transition-colors group"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit our Facebook page"
             >
               <FaFacebookF className="w-8 h-8 text-[#1A2B4C] group-hover:text-white transition-colors" />
             </a>
-            <a 
-              href="#" 
-              className="bg-[#F2F2F2] w-16 h-16 rounded-lg flex items-center justify-center hover:bg-[#1A2B4C] transition-colors group"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaInstagram className="w-8 h-8 text-[#1A2B4C] group-hover:text-white transition-colors" />
-            </a>
+
             <a 
               href="#" 
               className="bg-[#F2F2F2] w-16 h-16 rounded-lg flex items-center justify-center hover:bg-[#1A2B4C] transition-colors group"
@@ -169,6 +164,14 @@ export default function Contact() {
               rel="noopener noreferrer"
             >
               <FaTelegramPlane className="w-8 h-8 text-[#1A2B4C] group-hover:text-white transition-colors" />
+            </a>
+            <a 
+              href="https://www.tiktok.com/@gospel.of.grace.a" 
+              className="bg-[#F2F2F2] w-16 h-16 rounded-lg flex items-center justify-center hover:bg-[#1A2B4C] transition-colors group"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTiktok className="w-8 h-8 text-[#1A2B4C] group-hover:text-white transition-colors" />
             </a>
           </div>
         </div>

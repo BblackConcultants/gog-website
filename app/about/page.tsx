@@ -1,11 +1,10 @@
 import Image from 'next/image';
 import { FaEye, FaCrosshairs } from 'react-icons/fa';
-import Navigation from '../(components)/Navigation';
+
 
 export default function About() {
   return (
     <main className="flex-1">
-      <Navigation />
       {/* Hero Section */}
       <div className="relative h-[500px]">
         <Image

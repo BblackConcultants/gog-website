@@ -1,6 +1,6 @@
 'use client';
 
-import Navigation from '../(components)/Navigation';
+
 import Image from 'next/image';
 import React, { useState, FormEvent } from 'react';
 import type { IconType } from 'react-icons';
@@ -11,8 +11,9 @@ import {
   FaBriefcase,
   FaBuilding,
   FaUsers,
-  FaChevronRight,
-  FaChevronLeft
+  // Navigation icons will be used in future updates
+  // FaChevronRight,
+  // FaChevronLeft
 } from 'react-icons/fa';
 
 type TabType = 'learner' | 'programme' | 'employment' | 'provider' | 'guardian';
@@ -26,8 +27,8 @@ const tabs: { id: TabType; label: string; icon: IconType }[] = [
 ];
 
 const titles = ['Mr', 'Mrs', 'Miss', 'Dr', 'Prof', 'Rev'] as const;
-const genders = ['Male', 'Female', 'Other', 'Prefer not to say'] as const;
-const ethnicities = ['African', 'Coloured', 'Indian', 'White', 'Other'] as const;
+type Gender = 'Male' | 'Female' | 'Other';
+type Ethnicity = 'Black African' | 'Coloured' | 'Indian' | 'White' | 'Other';
 
 interface FormData {
   // Learner Details
@@ -37,8 +38,8 @@ interface FormData {
   idNumber?: string;
   citizenship?: string;
   dateOfBirth?: string;
-  gender?: typeof genders[number];
-  ethnicity?: typeof ethnicities[number];
+  gender?: Gender;
+  ethnicity?: Ethnicity;
   homeAddress?: string;
   postalAddress?: string;
   email?: string;
@@ -104,7 +105,6 @@ export default function Apply() {
   };
   return (
     <div>
-      <Navigation />
       
       {/* Apply Hero Section */}
       <div className="relative h-[500px] overflow-hidden">

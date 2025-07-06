@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaTiktok, FaFacebookF, FaTelegramPlane } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -45,8 +45,34 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Connect With Us</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-blue-400">Facebook</a></li>
-              <li><a href="#" className="hover:text-blue-400">Telegram</a></li>
+              <li>
+                <a 
+                  href="https://www.facebook.com/profile.php?id=61575006255074" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center hover:text-blue-400"
+                >
+                  <FaFacebookF className="mr-2" /> Facebook
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#" 
+                  className="flex items-center hover:text-blue-400"
+                >
+                  <FaTelegramPlane className="mr-2" /> Telegram
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://www.tiktok.com/@gospel.of.grace.a" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center hover:text-blue-400"
+                >
+                  <FaTiktok className="mr-2" /> TikTok
+                </a>
+              </li>
             </ul>
           </div>
         </div>

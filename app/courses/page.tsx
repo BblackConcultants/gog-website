@@ -1,4 +1,4 @@
-import Navigation from '../(components)/Navigation';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { 
@@ -17,7 +17,6 @@ import {
 export default function Courses() {
   return (
     <div>
-      <Navigation />
       
       {/* Courses Hero Section */}
       <div className="relative h-[500px] overflow-hidden">
@@ -45,7 +44,16 @@ export default function Courses() {
       {/* Main Courses */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Extra Curriculum Courses</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Our Main Courses</h2>
+          <div className="text-center mb-12">
+            <p className="text-lg text-gray-700 mb-4">
+              In partnership With SOTERIA Theological Seminary<br />
+              We are offering qualifications from, Certificate to PhD.
+            </p>
+            <p className="text-lg text-gray-600">
+              All our courses will be offered online through Telegram and Facebook
+            </p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Link href="/apply" className="block">
               <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">

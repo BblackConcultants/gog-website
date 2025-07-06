@@ -1,10 +1,9 @@
-import Navigation from '../(components)/Navigation';
+
 import Image from 'next/image';
 
 export default function Visionaries() {
   return (
     <div>
-      <Navigation />
       
       {/* Visionaries Hero Section */}
       <section className="bg-blue-600 text-white py-16">

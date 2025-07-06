@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-inter)'],
+      },
       animation: {
         'slow-zoom': 'slow-zoom 20s ease-in-out infinite',
         'fade-in': 'fade-in 1s ease-out',

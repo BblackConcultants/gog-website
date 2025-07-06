@@ -1,11 +1,10 @@
 'use client';
 
 import Image from 'next/image';
-import Navigation from '../../(components)/Navigation';
 import { useState, useRef } from 'react';
 
 export default function Team() {
-  const [imageError, setImageError] = useState<{[key: string]: boolean}>({});
+  const [, setImageError] = useState<{[key: string]: boolean}>({});
   const errorHandled = useRef<{[key: string]: boolean}>({});
 
   const handleImageError = (key: string) => {
@@ -16,8 +15,6 @@ export default function Team() {
   };
   return (
     <main className="flex-1">
-      <Navigation />
-      
       {/* Hero Section */}
       <div className="relative h-[600px] overflow-hidden">
         <Image
@@ -194,6 +191,25 @@ export default function Team() {
                 </div>
                 <h3 className="text-xl font-bold text-[#1A2B4C] text-center mb-2">Princess Khuthala Ntombela</h3>
                 <p className="text-[#1A2B4C] text-center">Secretary</p>
+              </div>
+            </div>
+            <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+              <div className="flex flex-col items-center">
+                <div className="relative w-48 h-48 mb-6 rounded-full">
+                  <div className="absolute inset-0 rounded-full border-4 border-[#D4AF37] shadow-lg">
+                    <Image
+                      src="/images/quality_assurance/phil.jpg"
+                      alt="Dr Phill Tshvangira"
+                      fill
+                      sizes="192px"
+                      className="rounded-full object-cover"
+                      quality={75}
+                      onError={() => handleImageError('khuthala')}
+                    />
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-[#1A2B4C] text-center mb-2">Dr Phill Tshvangira</h3>
+                <p className="text-[#1A2B4C] text-center">Head of Academic Studies</p>
               </div>
             </div>
           </div>
