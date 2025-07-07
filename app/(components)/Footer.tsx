@@ -57,7 +57,9 @@ export default function Footer() {
               </li>
               <li>
                 <a 
-                  href="#" 
+                  href="https://t.me/+rNxa0H15HKsxNmRk" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
                   className="flex items-center hover:text-blue-400"
                 >
                   <FaTelegramPlane className="mr-2" /> Telegram

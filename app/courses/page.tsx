@@ -174,7 +174,12 @@ export default function Courses() {
             All our courses are offered online through Telegram and Facebook platforms
           </p>
           <div className="flex justify-center space-x-4">
-            <a href="#" className="bg-blue-600 text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-blue-700">
+            <a 
+              href="https://t.me/+rNxa0H15HKsxNmRk" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="bg-blue-600 text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-blue-700"
+            >
               Join on Telegram
             </a>
             <a href="#" className="bg-blue-600 text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-blue-700">
