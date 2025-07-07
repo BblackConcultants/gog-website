@@ -88,7 +88,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-[#1A2B4C]">Location</h3>
-                    <p className="text-gray-600">Mpumalanga, South Africa</p>
+                    <p className="text-gray-600">Vereeniging, Gauteng, South Africa</p>
                   </div>
                 </div>
               </div>
